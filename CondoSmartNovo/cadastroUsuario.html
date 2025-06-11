@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cadastro | CondoSmart</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        background: #f7f8fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #222;
+        padding: 1rem;
+      }
+
+      .cadastro-container {
+        background: #fff;
+        padding: 3rem 2.5rem;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 420px;
+      }
+
+      h2 {
+        font-weight: 600;
+        font-size: 1.9rem;
+        margin-bottom: 2rem;
+        color: #1c2533;
+        text-align: center;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+      }
+
+      label {
+        font-weight: 600;
+        font-size: 0.95rem;
+        color: #4a5568;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        padding: 12px 14px;
+        border: 1.8px solid #cbd5e1;
+        border-radius: 8px;
+        font-size: 1rem;
+        outline-offset: 2px;
+        transition: border-color 0.3s ease;
+      }
+
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      input[type="password"]:focus {
+        border-color: #3b82f6;
+        box-shadow: 0 0 6px rgba(59, 130, 246, 0.4);
+      }
+
+      button {
+        margin-top: 1.5rem;
+        padding: 14px 0;
+        border: none;
+        border-radius: 8px;
+        background-color: #3b82f6;
+        color: white;
+        font-weight: 600;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background-color 0.25s ease;
+      }
+
+      button:hover {
+        background-color: #2563eb;
+      }
+
+      .footer-text {
+        margin-top: 1.8rem;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #64748b;
+      }
+
+      .footer-text a {
+        color: #3b82f6;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .footer-text a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 450px) {
+        .cadastro-container {
+          padding: 2rem 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cadastro-container">
+      <h2>Cadastre-se no CondoSmart</h2>
+      <form action="/cadastro" method="post" autocomplete="off">
+        <label for="nome">Nome Completo</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Seu nome completo"
+          required
+        />
+
+        <label for="cpf">CPF</label>
+        <input
+          type="text"
+          id="cpf"
+          name="cpf"
+          placeholder="000.000.000-00"
+          required
+        />
+
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="seu@email.com"
+          required
+        />
+
+        <label for="senha">Senha</label>
+        <input
+          type="password"
+          id="senha"
+          name="senha"
+          placeholder="••••••••"
+          required
+        />
+
+        <label for="confirma-senha">Confirme a Senha</label>
+        <input
+          type="password"
+          id="confirma-senha"
+          name="confirma-senha"
+          placeholder="••••••••"
+          required
+        />
+
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      <p class="footer-text">
+        Já tem uma conta? <a href="login.html">Faça login aqui</a>
+      </p>
+    </div>
+  </body>
+</html>
