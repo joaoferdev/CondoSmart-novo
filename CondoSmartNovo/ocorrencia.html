@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Manutenção</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./ocorrencia.html">Ocorrências</a></li>
+          <li><a href="./sobre.html">Sobre nós</a></li>
+          <li><a href="">Sair</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <h1 class="titulo">Manutenções</h1>
+
+          <table class="tabela-manutencoes" id="tabela-manutencoes">
+            <thead>
+              <tr>
+                <th class="col-id">ID</th>
+                <th class="col-titulo">Título</th>
+                <th class="col-descricao">Descrição</th>
+                <th class="col-data">Data Agendada</th>
+                <th class="col-status">Status</th>
+              </tr>
+            </thead>
+            <a class="cadastro-btn" href="./cadastro.html">Cadastrar</a>
+            <tbody>
+              <!-- As manutenções serão adicionadas aqui via JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h1 class="titulo">Quadro de Avisos</h1>
+          <a class="cadastro-btn" href="./avisos.html">Cadastrar</a>
+          <div id="quadro-avisos" class="quadro-avisos">
+            <!-- Avisos serão inseridos aqui -->
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

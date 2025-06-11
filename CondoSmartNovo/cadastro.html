@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./ocorrencia.html">Ocorrências</a></li>
+          <li><a href="./sobre.html">Sobre nós</a></li>
+          <li><a href="">Sair</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+ <div class="container-manutencao">
+    <h2 class="titulo-manutencao">Cadastrar Nova Manutenção</h2>
+
+    <form id="form-manutencao" class="form-manutencao">
+      <div class="campo-form">
+        <label for="id" class="label-form">ID</label>
+        <input type="text" id="id" class="input-manutencao" required>
+      </div>
+      <div class="campo-form">
+        <label for="titulo" class="label-form">Título</label>
+        <input type="text" id="titulo" class="input-manutencao" required>
+      </div>
+      <div class="campo-form">
+        <label for="descricao" class="label-form">Descrição</label>
+        <textarea id="descricao" class="input-manutencao" rows="3" required></textarea>
+      </div>
+      <div class="campo-form">
+        <label for="data" class="label-form">Data Agendada</label>
+        <input type="date" id="data" class="input-manutencao" required>
+      </div>
+      <div class="campo-form">
+        <label for="status" class="label-form">Status</label>
+        <select id="status" class="input-manutencao" required>
+          <option value="">Selecione...</option>
+          <option value="pendente">Pendente</option>
+          <option value="andamento">Andamento</option>
+          <option value="concluido">Concluído</option>
+        </select>
+      </div>
+   
+      <button type="submit" class="btn-adicionar">Adicionar à Tabela</button>
+    </form>
+    </main>
+     
+  </body>
+</html>
